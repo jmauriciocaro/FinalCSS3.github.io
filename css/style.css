@@ -1,0 +1,136 @@
+/* .color1 { #484450 }; body
+.color2 { #466067 };
+.color3 { #459a96 };
+.color4 { #34baab }; nav
+.color5 { #c4c8c5 }; h1 */
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex; /* Los elementos de la lista estarÃ¡n en una fila */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    width: 70%; /* Ocupa el 100% del espacio disponible del contenedor */
+    margin: 0 auto;
+    padding: 15px;
+}
+nav li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+body{
+    background-color:  #c4c8c5;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    color:#484450;
+    text-align: center;
+    margin: 0%;
+    padding-top: 15px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+}
+/* NAV PROPIETIES */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #34baab;
+    width: 100%;
+    border-radius: 1cap;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #466067;
+}
+nav a:visited {
+    color: black; /* Mantiene el mismo color después de visitar */
+}
+nav a:hover {
+    color: #466067;
+}
+nav a.active {
+    color:#484450;
+    font-size: 20px;
+    background-color: #c4c8c5;
+    padding: 20px;
+}
+/* DIV PROPIETIES */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;   
+}
+
+.galeria img {
+    width: 95%;   
+    border-radius: 1cap;
+    border: 5px solid #466067 ;
+    
+}
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+}
+.mosaico img {
+    width: 100%;   
+    border-radius: 1cap;
+        
+}
+.mosaico p {
+    text-align: center;
+}
+/* NTH-CHILD */
+.mosaico div:nth-of-type(2n) {
+    border: 5px solid #ecf0f1; /* Primera imagen con borde rojo */
+    border-radius: 1cap;
+    background-color: #ecf0f1;
+}
+.mosaico div:nth-of-type(2n+1) {
+    border: 5px solid #466067; /* Primera imagen con borde rojo */
+    border-radius: 1cap;
+    background-color: #466067;
+    color: #c4c8c5;
+}
+
+.Flowers {
+    margin-left: 15px;
+}
+.Flowers img {
+    width: 97%;   
+    border-radius: 1cap;
+    border: 5px solid #466067 ;    
+}
+/* Estilo inicial: ocultar el enlace */
+#saltar-contenido {
+    position: absolute;  /* Lo posicionamos de forma absoluta */
+    top: -9999px;        /* Inicialmente lo mantenemos fuera de la vista */
+    left: -9999px;
+    transition: top 0.3s ease, left 0.3s ease;  /* Suavizamos el movimiento */
+}
+
+/* Estilo cuando el enlace está enfocado */
+#saltar-contenido:focus {
+    top: 20px;          /* Lo movemos hacia el lugar visible */
+    left: 20px;         /* También podemos ajustar la distancia desde el borde */
+    background-color: #34baab; /* Un fondo para destacar */
+    color: #fff;        /* Cambiamos el color del texto para mejor contraste */
+    padding: 10px 15px; /* Agregamos algo de espacio al alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+footer {
+    background-color:#466067; /* Fondo de color oscuro */
+    color: #ecf0f1; /* Texto blanco */
+    padding: 15px 0;
+    text-align: center;
+}
